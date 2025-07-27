@@ -38,7 +38,7 @@ pip install -r requirements.txt
 
 1. **Clone the repository**
 ```bash
-git clone https://github.com/yourusername/credit-card-fraud-detection.git
+git clone https://github.com/Odeneho-Calculus/Credit-Card-Fraud-Detection.git
 cd credit-card-fraud-detection
 ```
 
@@ -277,10 +277,8 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 📞 Contact
 
-- **Project Maintainer**: [Your Name]
-- **Email**: your.email@example.com
-- **LinkedIn**: [Your LinkedIn Profile]
-- **GitHub**: [Your GitHub Profile]
+- **Project Maintainer**: kalculus
+- **Email**: calculus069@gmail.com
 
 ---
 
