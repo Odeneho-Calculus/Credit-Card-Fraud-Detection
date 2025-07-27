@@ -4,6 +4,7 @@ Execute this script to run the entire machine learning pipeline
 """
 
 from fraud_detection_models import FraudDetectionPipeline
+from config import Config
 import sys
 from pathlib import Path
 
@@ -14,13 +15,14 @@ def run_complete_analysis():
     print("🚀 STARTING COMPLETE FRAUD DETECTION ANALYSIS")
     print("=" * 60)
 
-    # Dataset path
-    dataset_path = r"c:\Users\kalculusGuy\Desktop\projectEra\ML\gabby\data\creditcard_2023.csv"
+    # Ensure required directories exist
+    Config.ensure_directories()
 
-    # Check if dataset exists
-    if not Path(dataset_path).exists():
-        print(f"❌ Dataset not found at: {dataset_path}")
-        print("Please ensure the dataset is downloaded and placed in the correct location.")
+    # Validate dataset
+    is_valid, dataset_path, error_message = Config.validate_dataset()
+    if not is_valid:
+        print(f"❌ {error_message}")
+        print("Please ensure the dataset is downloaded and placed in the 'data/' directory.")
         return False
 
     try:
@@ -42,10 +44,13 @@ def run_complete_analysis():
         print("\n📊 Step 5: Creating model comparison visualizations...")
         pipeline.create_comparison_visualizations()
 
-        print("\n📋 Step 6: Generating performance summary...")
+        print("\n🎨 Step 6: Creating individual model analysis charts...")
+        pipeline.create_individual_model_plots()
+
+        print("\n📋 Step 7: Generating performance summary...")
         summary_df, best_model = pipeline.get_model_summary()
 
-        print("\n💾 Step 7: Saving trained models...")
+        print("\n💾 Step 8: Saving trained models...")
         pipeline.save_models()
 
         print(f"\n🎉 ANALYSIS COMPLETED SUCCESSFULLY!")

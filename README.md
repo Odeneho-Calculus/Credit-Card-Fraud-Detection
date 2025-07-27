@@ -25,6 +25,166 @@ The project uses the **Credit Card Fraud Detection Dataset 2023** containing:
 - **Balanced dataset** (50% legitimate, 50% fraudulent)
 - **No missing values** - ready for immediate analysis
 
+## 📊 **Enhanced Visualization System** (NEW!)
+
+### 🎨 **Individual Model Analysis Charts**
+Each model gets its own comprehensive 20x16 analysis chart with 10 detailed visualizations:
+- **Confusion Matrix** with performance metrics overlay
+- **ROC Curve** with AUC score
+- **Precision-Recall Curve** analysis
+- **Feature Importance** ranking (top 15 features)
+- **Prediction Distribution** by class
+- **Threshold Analysis** for optimal cutoff
+- **Classification Report** heatmap
+- **Performance Radar Chart** (5 metrics)
+- **Learning Curve** simulation
+- **Error Analysis** breakdown (TP/TN/FP/FN)
+
+### 📈 **Advanced Data Exploration**
+Comprehensive EDA with 8 detailed analysis charts:
+- **Dataset Overview**: Statistics, missing values, data types, feature ranges
+- **Class Distribution**: Imbalance analysis, amount distributions, statistical summaries
+- **Correlation Analysis**: Full correlation matrix, target correlations, high correlation pairs
+- **PCA Analysis**: V1-V28 component analysis, variance by class, top components
+- **Amount Analysis**: Distribution analysis, percentiles, range breakdowns
+- **Time Analysis**: Hourly patterns, fraud rates by time, time vs amount correlation
+- **Feature Distributions**: Key feature analysis by class with statistical annotations
+- **Outlier Analysis**: Outlier detection, fraud correlation, box plot comparisons
+
+### 🚀 **Visualization Commands**
+
+```bash
+# Generate individual model analysis charts
+python generate_individual_plots.py
+
+# Generate advanced data exploration charts
+python data_visualizations.py
+
+# Complete analysis with all visualizations
+python run_complete_analysis.py
+
+# Run with custom dataset path
+python run_with_custom_dataset.py --dataset /path/to/your/data.csv
+
+# Show current configuration
+python config.py
+
+# Check which plots exist
+python check_plots.py
+
+# Generate visual README with plot gallery
+python generate_visual_readme.py
+```
+
+### ⚙️ **Configuration System** (NEW!)
+
+The system now uses a flexible configuration system instead of hardcoded paths:
+
+#### **Environment Variables:**
+```bash
+# Set custom dataset path
+export FRAUD_DATASET_PATH="/path/to/your/creditcard_data.csv"
+
+# Configure API settings
+export FRAUD_API_HOST="localhost"
+export FRAUD_API_PORT="8000"
+export FRAUD_API_DEBUG="False"
+
+# Training parameters
+export FRAUD_TEST_SIZE="0.3"
+export FRAUD_RANDOM_STATE="123"
+```
+
+#### **Configuration File:**
+```bash
+# Copy example configuration
+cp .env.example .env
+
+# Edit configuration
+nano .env
+```
+
+#### **Command Line Arguments:**
+```bash
+# Use custom dataset
+python run_with_custom_dataset.py --dataset ./my_data.csv
+
+# Show configuration
+python run_with_custom_dataset.py --config
+```
+
+### 🔍 **Visual Utilities** (NEW!)
+
+#### **Plot Status Checker:**
+```bash
+python check_plots.py
+```
+- Shows which visualizations exist
+- Displays file sizes and creation dates
+- Provides generation commands for missing plots
+
+#### **Visual README Generator:**
+```bash
+python generate_visual_readme.py
+```
+- Creates `README_VISUAL.md` with plot gallery
+- Shows plot availability status
+- Includes detailed descriptions for each visualization
+
+## 🖼️ **Visual Gallery** (NEW!)
+
+### 🎨 **Individual Model Analysis Charts**
+Each model gets its own comprehensive 20x16 analysis chart with 10 detailed visualizations:
+
+#### **Random Forest Analysis**
+![Random Forest Analysis](plots/random_forest_analysis.png)
+
+#### **XGBoost Analysis**
+![XGBoost Analysis](plots/xgboost_analysis.png)
+
+#### **Logistic Regression Analysis**
+![Logistic Regression Analysis](plots/logistic_regression_analysis.png)
+
+#### **Naive Bayes Analysis**
+![Naive Bayes Analysis](plots/naive_bayes_analysis.png)
+
+### 📈 **Advanced Data Exploration Charts**
+Comprehensive EDA with 8 detailed analysis charts:
+
+#### **Dataset Overview**
+![Dataset Overview](plots/visuals/dataset_overview.png)
+
+#### **Class Distribution Analysis**
+![Class Distribution](plots/visuals/class_distribution_analysis.png)
+
+#### **Feature Correlation Analysis**
+![Correlation Analysis](plots/visuals/correlation_analysis.png)
+
+#### **PCA Components Analysis**
+![PCA Analysis](plots/visuals/pca_analysis.png)
+
+#### **Transaction Amount Analysis**
+![Amount Analysis](plots/visuals/amount_analysis.png)
+
+#### **Time-based Analysis**
+![Time Analysis](plots/visuals/time_analysis.png)
+
+#### **Feature Distributions**
+![Feature Distributions](plots/visuals/feature_distributions.png)
+
+#### **Outlier Analysis**
+![Outlier Analysis](plots/visuals/outlier_analysis.png)
+
+### 🔄 **Model Comparison**
+![Model Comparison](plots/model_comparison.png)
+
+### 📊 **Data Distribution**
+![Data Distribution](plots/data_distribution.png)
+
+---
+
+> **📝 Note:** Images will be generated after running the analysis scripts. If images don't display, ensure you've run the complete analysis first.
+
 ## 🚀 Quick Start
 
 ### Prerequisites
