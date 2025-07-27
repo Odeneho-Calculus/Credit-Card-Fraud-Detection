@@ -97,6 +97,12 @@ db.sqlite3-journal
 # Flask stuff:
 instance/
 .webassets-cache
+flask_session/
+
+# Web application logs
+app.log
+access.log
+error.log
 
 # Scrapy stuff:
 .scrapy
