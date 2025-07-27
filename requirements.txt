@@ -1,0 +1,40 @@
+# Credit Card Fraud Detection - Requirements
+# Core Data Science Libraries
+pandas>=2.0.0
+numpy>=1.24.0
+scipy>=1.10.0
+
+# Machine Learning
+scikit-learn>=1.6.0
+xgboost>=3.0.0
+imbalanced-learn>=0.13.0
+
+# Data Visualization
+matplotlib>=3.7.0
+seaborn>=0.12.0
+plotly>=5.15.0
+
+# Model Persistence
+joblib>=1.3.0
+
+# Jupyter Notebook Support
+jupyter>=1.0.0
+ipykernel>=6.25.0
+notebook>=7.0.0
+
+# Progress Bars and Utilities
+tqdm>=4.65.0
+pathlib2>=2.3.7
+
+# Optional: Advanced Features
+# lightgbm>=4.0.0          # Alternative gradient boosting
+# catboost>=1.2.0          # Another gradient boosting option
+# optuna>=3.3.0            # Hyperparameter optimization
+# shap>=0.42.0             # Model explainability
+# lime>=0.2.0              # Local interpretable model explanations
+
+# Development and Testing (Optional)
+# pytest>=7.4.0
+# black>=23.7.0
+# flake8>=6.0.0
+# mypy>=1.5.0
