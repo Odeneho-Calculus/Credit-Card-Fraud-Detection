@@ -204,9 +204,7 @@ python verify_readme_images.py
 ![Outlier Analysis](plots/visuals/outlier_analysis.png)
 *Comprehensive outlier detection analysis including outlier percentages by feature, fraud correlation with outliers, box plot comparisons, and anomaly patterns.*
 
-### ⏰ **Time-based - Temporal Pattern Analysis**
-![Time-based Analysis](plots/visuals/time_analysis.png)
-*Time-based fraud pattern analysis including hourly transaction patterns, fraud rates by time of day, temporal distributions, and time vs amount correlations.*
+
 
 ---
 
@@ -226,10 +224,10 @@ python verify_readme_images.py
 
 **🎨 All images above are automatically generated during the training and analysis process!**
 
-### **📊 Total Visualizations: 14 High-Resolution Charts**
+### **📊 Total Visualizations: 13 High-Resolution Charts**
 
 - **🤖 4 Individual Model Analysis Charts** - Comprehensive performance breakdowns
-- **📊 8 Advanced Data Exploration Charts** - Complete EDA visualizations
+- **📊 7 Advanced Data Exploration Charts** - Complete EDA visualizations
 - **🏆 2 Performance & Comparison Charts** - Model comparisons and overviews
 
 *All images are generated at 300 DPI resolution, suitable for presentations and publications.*
@@ -256,7 +254,6 @@ After running the analysis, you'll have the following visualization files:
     ├── 🔗 correlation_analysis.png          # Feature correlation matrix
     ├── 🎯 pca_analysis.png                  # PCA components analysis
     ├── 💰 amount_analysis.png               # Transaction amount patterns
-    ├── ⏰ time_analysis.png                 # Time-based fraud patterns
     ├── 📉 feature_distributions.png         # Feature distributions by class
     └── 🚨 outlier_analysis.png              # Outlier detection analysis
 
@@ -285,13 +282,13 @@ python check_plots.py                    # Shows which images exist and their st
 
 ## 🚨 **Important Note About Visual Gallery**
 
-> **🎨 ALL 14 IMAGES ABOVE WILL BE VISIBLE IN YOUR README ONCE GENERATED!**
+> **🎨 ALL 13 IMAGES ABOVE WILL BE VISIBLE IN YOUR README ONCE GENERATED!**
 >
 > The images are automatically created during training and saved to the `plots/` directory. If you don't see the images in your GitHub README or local viewer:
 >
 > **✅ First run:** `python run_complete_analysis.py` or `python fix_corrupted_models.py`
 >
-> **✅ Then check:** All 14 visualization files will be created and displayed automatically
+> **✅ Then check:** All 13 visualization files will be created and displayed automatically
 >
 > **✅ File paths are relative** so they work in any environment (GitHub, local, etc.)
 
