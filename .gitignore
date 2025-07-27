@@ -202,20 +202,20 @@ outputs/
 # ===========================
 # VISUALIZATION & PLOTS
 # ===========================
-# Generated plots and figures
-plots/*.png
-plots/*.jpg
-plots/*.jpeg
-plots/*.gif
-plots/*.svg
-plots/*.pdf
+# Generated plots and figures (DISABLED TO ALLOW README IMAGES)
+# plots/*.png       # Commented out to allow README gallery images
+# plots/*.jpg
+# plots/*.jpeg
+# plots/*.gif
+# plots/*.svg
+# plots/*.pdf
 figures/
-*.png
-*.jpg
-*.jpeg
-*.gif
-*.svg
-*.pdf
+# *.png             # Commented out to allow README gallery images
+# *.jpg
+# *.jpeg
+# *.gif
+# *.svg
+# *.pdf
 
 # Keep plots directory structure
 !plots/.gitkeep
@@ -224,6 +224,14 @@ figures/
 !examples/*.png
 !examples/*.jpg
 !README_assets/*.png
+
+# ALLOW ALL IMAGES IN PLOTS DIRECTORY FOR README GALLERY
+!plots/*.png
+!plots/*.jpg
+!plots/*.jpeg
+!plots/visuals/*.png
+!plots/visuals/*.jpg
+!plots/visuals/*.jpeg
 
 # ===========================
 # OPERATING SYSTEM
