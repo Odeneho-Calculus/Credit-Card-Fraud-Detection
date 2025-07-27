@@ -74,6 +74,12 @@ python check_plots.py
 
 # Generate visual README with plot gallery
 python generate_visual_readme.py
+
+# Verify README images exist
+python verify_readme_images.py
+
+# Fix corrupted model files
+python fix_corrupted_models.py
 ```
 
 ### ⚙️ **Configuration System** (NEW!)
@@ -131,59 +137,165 @@ python generate_visual_readme.py
 - Shows plot availability status
 - Includes detailed descriptions for each visualization
 
-## 🖼️ **Visual Gallery** (NEW!)
+#### **README Image Verifier:**
+```bash
+python verify_readme_images.py
+```
+- Verifies all images referenced in README.md exist
+- Shows which images are missing
+- Provides generation commands for missing images
+- Categorizes images by type and shows status
 
-### 🎨 **Individual Model Analysis Charts**
-Each model gets its own comprehensive 20x16 analysis chart with 10 detailed visualizations:
+## 🖼️ **Complete Visual Gallery**
 
-#### **Random Forest Analysis**
-![Random Forest Analysis](plots/random_forest_analysis.png)
-
-#### **XGBoost Analysis**
-![XGBoost Analysis](plots/xgboost_analysis.png)
-
-#### **Logistic Regression Analysis**
-![Logistic Regression Analysis](plots/logistic_regression_analysis.png)
-
-#### **Naive Bayes Analysis**
-![Naive Bayes Analysis](plots/naive_bayes_analysis.png)
-
-### 📈 **Advanced Data Exploration Charts**
-Comprehensive EDA with 8 detailed analysis charts:
-
-#### **Dataset Overview**
-![Dataset Overview](plots/visuals/dataset_overview.png)
-
-#### **Class Distribution Analysis**
-![Class Distribution](plots/visuals/class_distribution_analysis.png)
-
-#### **Feature Correlation Analysis**
-![Correlation Analysis](plots/visuals/correlation_analysis.png)
-
-#### **PCA Components Analysis**
-![PCA Analysis](plots/visuals/pca_analysis.png)
-
-#### **Transaction Amount Analysis**
-![Amount Analysis](plots/visuals/amount_analysis.png)
-
-#### **Time-based Analysis**
-![Time Analysis](plots/visuals/time_analysis.png)
-
-#### **Feature Distributions**
-![Feature Distributions](plots/visuals/feature_distributions.png)
-
-#### **Outlier Analysis**
-![Outlier Analysis](plots/visuals/outlier_analysis.png)
-
-### 🔄 **Model Comparison**
-![Model Comparison](plots/model_comparison.png)
-
-### 📊 **Data Distribution**
-![Data Distribution](plots/data_distribution.png)
+*All visualizations generated during training and analysis process*
 
 ---
 
-> **📝 Note:** Images will be generated after running the analysis scripts. If images don't display, ensure you've run the complete analysis first.
+## 🤖 **Individual Model Analysis Charts**
+*Each model gets its own comprehensive 20×16 analysis chart with 10 detailed visualizations*
+
+### 🌳 **Random Forest - Comprehensive Analysis**
+![Random Forest Analysis](plots/random_forest_analysis.png)
+*Complete performance analysis including confusion matrix, ROC curve, feature importance, prediction distributions, threshold analysis, classification report, performance radar, learning curve, and error breakdown.*
+
+### 🚀 **XGBoost - Advanced Gradient Boosting Analysis**
+![XGBoost Analysis](plots/xgboost_analysis.png)
+*State-of-the-art gradient boosting analysis with detailed performance metrics, feature importance rankings, prediction confidence distributions, and comprehensive error analysis.*
+
+### 📈 **Logistic Regression - Statistical Analysis**
+![Logistic Regression Analysis](plots/logistic_regression_analysis.png)
+*Classical statistical approach analysis with probability distributions, coefficient importance, decision boundary analysis, and statistical performance metrics.*
+
+### 🎯 **Naive Bayes - Probabilistic Analysis**
+![Naive Bayes Analysis](plots/naive_bayes_analysis.png)
+*Probabilistic classifier analysis with likelihood distributions, feature independence assumptions, prediction confidence, and Bayesian performance metrics.*
+
+---
+
+## 📊 **Advanced Data Exploration Charts**
+*Comprehensive EDA with detailed analysis visualizations*
+
+### 📋 **Dataset Overview - Complete Statistics**
+![Dataset Overview](plots/visuals/dataset_overview.png)
+*Comprehensive dataset statistics including transaction counts, fraud rates, missing values analysis, data types distribution, and feature value ranges.*
+
+### ⚖️ **Class Distribution - Imbalance Analysis**
+![Class Distribution Analysis](plots/visuals/class_distribution_analysis.png)
+*Detailed class imbalance analysis with fraud vs legitimate ratios, amount distributions by class, statistical summaries, and imbalance impact assessment.*
+
+### 🔗 **Feature Correlation - Relationship Analysis**
+![Feature Correlation Analysis](plots/visuals/correlation_analysis.png)
+*Complete correlation matrix analysis, target feature correlations, highly correlated feature pairs identification, and correlation distribution patterns.*
+
+### 🎯 **PCA Components - V1-V28 Analysis**
+![PCA Components Analysis](plots/visuals/pca_analysis.png)
+*Principal Component Analysis of V1-V28 features including component distributions, variance analysis by class, top fraud-predictive components, and PCA heatmaps.*
+
+### 💰 **Transaction Amount - Pattern Analysis**
+![Transaction Amount Analysis](plots/visuals/amount_analysis.png)
+*Comprehensive transaction amount analysis including distributions, percentiles by class, amount ranges, statistical comparisons, and fraud amount patterns.*
+
+### 📉 **Feature Distributions - Class Comparison**
+![Feature Distributions](plots/visuals/feature_distributions.png)
+*Key feature distribution analysis by class with statistical annotations, mean comparisons, distribution overlaps, and feature discriminative power.*
+
+### 🚨 **Outlier Analysis - Anomaly Detection**
+![Outlier Analysis](plots/visuals/outlier_analysis.png)
+*Comprehensive outlier detection analysis including outlier percentages by feature, fraud correlation with outliers, box plot comparisons, and anomaly patterns.*
+
+### ⏰ **Time-based - Temporal Pattern Analysis**
+![Time-based Analysis](plots/visuals/time_analysis.png)
+*Time-based fraud pattern analysis including hourly transaction patterns, fraud rates by time of day, temporal distributions, and time vs amount correlations.*
+
+---
+
+## 🏆 **Performance & Comparison Visualizations**
+
+### 📊 **Model Performance Comparison**
+![Model Comparison](plots/model_comparison.png)
+*Side-by-side model performance comparison with accuracy, precision, recall, F1-score, and AUC metrics across all four machine learning models.*
+
+### 📈 **Complete Data Analysis Overview**
+![Data Analysis Overview](plots/data_analysis.png)
+*Comprehensive data analysis summary showing overall patterns, distributions, and key insights for fraud detection.*
+
+---
+
+## 📋 **Visual Gallery Summary**
+
+**🎨 All images above are automatically generated during the training and analysis process!**
+
+### **📊 Total Visualizations: 14 High-Resolution Charts**
+
+- **🤖 4 Individual Model Analysis Charts** - Comprehensive performance breakdowns
+- **📊 8 Advanced Data Exploration Charts** - Complete EDA visualizations
+- **🏆 2 Performance & Comparison Charts** - Model comparisons and overviews
+
+*All images are generated at 300 DPI resolution, suitable for presentations and publications.*
+
+### 📁 **Complete Generated Images Structure**
+
+After running the analysis, you'll have the following visualization files:
+
+```
+📂 plots/
+├── 🤖 Individual Model Analysis Charts (4 files)
+│   ├── 🌳 random_forest_analysis.png        # Random Forest comprehensive analysis
+│   ├── 🚀 xgboost_analysis.png              # XGBoost comprehensive analysis
+│   ├── � logistic_regression_analysis.png  # Logistic Regression analysis
+│   └── 🎯 naive_bayes_analysis.png          # Naive Bayes analysis
+│
+├── 🏆 Performance & Comparison Charts (2 files)
+│   ├── 📊 model_comparison.png              # Model performance comparison
+│   └── 📈 data_analysis.png                 # Complete data analysis overview
+│
+└── 📂 visuals/ (Advanced Data Exploration - 7 files)
+    ├── 📊 dataset_overview.png              # Dataset statistics & overview
+    ├── ⚖️ class_distribution_analysis.png   # Class imbalance analysis
+    ├── 🔗 correlation_analysis.png          # Feature correlation matrix
+    ├── 🎯 pca_analysis.png                  # PCA components analysis
+    ├── 💰 amount_analysis.png               # Transaction amount patterns
+    ├── ⏰ time_analysis.png                 # Time-based fraud patterns
+    ├── 📉 feature_distributions.png         # Feature distributions by class
+    └── 🚨 outlier_analysis.png              # Outlier detection analysis
+
+📊 Total: 13 high-resolution visualization files (300 DPI, publication quality)
+```
+
+### 🎨 **Image Generation Commands**
+
+#### **Generate All Images:**
+```bash
+python run_complete_analysis.py          # Generates all 13 visualization files
+```
+
+#### **Generate Specific Image Sets:**
+```bash
+python generate_individual_plots.py      # Generates 4 individual model analysis charts
+python data_visualizations.py            # Generates 7 advanced data exploration charts
+```
+
+#### **Check Generated Images:**
+```bash
+python check_plots.py                    # Shows which images exist and their status
+```
+
+---
+
+## 🚨 **Important Note About Visual Gallery**
+
+> **🎨 ALL 14 IMAGES ABOVE WILL BE VISIBLE IN YOUR README ONCE GENERATED!**
+>
+> The images are automatically created during training and saved to the `plots/` directory. If you don't see the images in your GitHub README or local viewer:
+>
+> **✅ First run:** `python run_complete_analysis.py` or `python fix_corrupted_models.py`
+>
+> **✅ Then check:** All 14 visualization files will be created and displayed automatically
+>
+> **✅ File paths are relative** so they work in any environment (GitHub, local, etc.)
+
+---
 
 ## 🚀 Quick Start
 
